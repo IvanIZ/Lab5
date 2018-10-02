@@ -12,27 +12,62 @@ public class BankAccount {
     /*
      * You may want to use this to distinguish between different kinds of accounts.
      */
+
+    /**
+     * Determine the type of the account.
+     */
     public enum BankAccountType {
+        /**
+         * this is a checking account.
+         */
         CHECKINGS,
+        /**
+         * this is a saving account.
+         */
         SAVINGS,
+        /**
+         * this is a student account.
+         */
         STUDENT,
+        /**
+         * This is a workplace account.
+         */
         WORKPLACE
     }
 
-    private int accountNumber;
-    public BankAccountType accountType;
+    /**
+     * the number for the bank account.
+     */
+    private int accountNumber = 0;
+    /**
+     * the type of the account.
+     */
+    private BankAccountType accountType;
+    /**
+     * the balance in the account.
+     */
     private double accountBalance;
+    /**
+     * The name of the account owner.
+     */
     private String ownerName;
-    public double interestRate;
+    /**
+     * the interest rate of the account.
+     */
+    private double interestRate;
+    /**
+     * the interest that has been earned by the account.
+     */
     private double interestEarned;
 
-    public BankAccount(final String name, final BankAccountType accountCategory) {
-        /*
-         * Implement this function
-         */
-    }
-
-    /*
-     * Implement getters and setters as appropriate for private variables.
+    /**
+     * The constructor of the account.
+     * @param name name of the owner.
+     * @param accountCategory the type of the account.
      */
+    public BankAccount(final String name, final BankAccountType accountCategory) {
+        ownerName = name;
+        accountType = accountCategory;
+        accountNumber++;
+    }
 }
