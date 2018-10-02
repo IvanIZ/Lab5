@@ -69,5 +69,16 @@ public class BankAccount {
         ownerName = name;
         accountType = accountCategory;
         accountNumber++;
+        accountBalance = 0;
+        interestEarned = 0;
+        interestRate = 0;
+    }
+
+    /**
+     * set account number.
+     * @param n new account number
+     */
+    public void setAccountNumber(final int n) {
+        accountNumber = n;
     }
 }
