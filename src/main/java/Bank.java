@@ -9,8 +9,14 @@
  */
 public class Bank {
 
-    public String bankName;
+    /**
+     * The name of the bank.
+     */
+    private String bankName;
 
+    /**
+     * Default constructor of a bank.
+     */
     public Bank() {
         bankName = "Illini Bank";
     }
@@ -79,7 +85,10 @@ public class Bank {
          */
     }
 
-    public static int totalAccounts = 0;
+    /**
+     * The amount of total account.
+     */
+    private static int totalAccounts = 0;
     /**
      * Uses static variable to get number of bank accounts opened.
      *
