@@ -76,9 +76,33 @@ public class BankAccount {
 
     /**
      * set account number.
-     * @param n new account number
+     * @param n new account number.
      */
     public void setAccountNumber(final int n) {
         accountNumber = n;
+    }
+
+    /**
+     * to return the account number.
+     * @return the account number.
+     */
+    public int getAccountNumber() {
+        return accountNumber;
+    }
+
+    /**
+     * the function that sets the account balance.
+     * @param n the new account balance.
+     */
+    public void setAccountBalance(final int n) {
+        accountBalance = n;
+    }
+
+    /**
+     * the function that sets account balance.
+     * @return the current balance. 
+     */
+    public double getAccountBalance() {
+        return accountBalance;
     }
 }
